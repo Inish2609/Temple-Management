@@ -11,6 +11,12 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import LoginScreen from './src/src/screens/LoginScreen';
+import HomeScreen from './src/src/screens/HomeScreen';
+import CommitteeMemberScreen from './src/src/screens/CommitteeMemberScreen';
+import PoojaRegistrationScreen from './src/src/screens/PoojaRegistrationScreen';
+import FestivalDashboardScreen from './src/src/screens/FestivalDashboardScreen';
+import StartScreen from './src/src/screens/StartScreen';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,7 +24,13 @@ function App() {
   return (
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
+      {/* <AppContent /> */}
+      {/* <StartScreen /> */}
+      {/* <LoginScreen /> */}
+      {/* <HomeScreen /> */}
+      {/* <CommitteeMemberScreen /> */}
+      {/* <PoojaRegistrationScreen /> */}
+      <FestivalDashboardScreen />
     </SafeAreaProvider>
   );
 }
